@@ -7,6 +7,10 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchArch>i386, x86_64</MtouchArch>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System" />
@@ -50,6 +54,10 @@
     <Content Include="favorited.png" />
     <Content Include="background.png" />
     <Content Include="sample.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
   </ItemGroup>
   <Import Project="Sample.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

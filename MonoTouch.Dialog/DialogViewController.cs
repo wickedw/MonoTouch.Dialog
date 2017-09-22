@@ -412,7 +412,7 @@ namespace MonoTouch.Dialog
 			{
 				var section = Root.Sections [(int) sectionIdx];
 				if (section.HeaderView == null)
-					return -1;
+					return 0;
 				return section.HeaderView.Frame.Height;
 			}
 
@@ -426,7 +426,7 @@ namespace MonoTouch.Dialog
 			{
 				var section = Root.Sections [(int) sectionIdx];
 				if (section.FooterView == null)
-					return -1;
+					return 0;
 				return section.FooterView.Frame.Height;
 			}
 			

@@ -82,7 +82,7 @@ namespace Sample
 			// Create our UI and add it to the current toplevel navigation controller
 			// this will allow us to have nice navigation animations.
 			//
-			var dv = new DialogViewController (menu) {
+			var dv = new DialogViewController (UITableViewStyle.Plain, menu) {
 				Autorotate = true
 			};
 			navigation = new UINavigationController ();
